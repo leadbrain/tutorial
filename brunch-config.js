@@ -62,6 +62,11 @@ exports.config = {
       elmFolder: "web/elm",
       mainModules: ["App.elm"],
       outputFolder: "../static/vendor"
+    },
+    copycat: {
+      "fonts": [
+        "node_modules/font-awesome/fonts"
+      ]
     }
   },
 
@@ -73,6 +78,5 @@ exports.config = {
 
   npm: {
     enabled: true,
-    whitelist: ["phoenix", "phoenix_html"]
   }
 };
