@@ -19,6 +19,13 @@ defmodule Tutorial.Router do
     get "/", PageController, :index
   end
 
+  scope "/api", Tutorial do
+    pipe_through :api
+
+    get "/players", PlayerController, :index
+    get "/players/:id", PlayerController, :show
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", Tutorial do
   #   pipe_through :api
