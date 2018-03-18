@@ -21,6 +21,8 @@ exports.config = {
     },
     stylesheets: {
       joinTo: "css/app.css",
+      joinTo: "ace-css/css/ace.css",
+      joinTo: "font-awesome/css/font-awesome.css",
       order: {
         after: ["web/static/css/app.css"] // concat app.css last
       }
